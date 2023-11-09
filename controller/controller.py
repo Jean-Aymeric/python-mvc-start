@@ -1,6 +1,6 @@
-from contract.icontroller import IController
-from contract.imodel import IModel
-from contract.iview import IView
+from shared.icontroller import IController
+from shared.imodel import IModel
+from shared.iview import IView
 
 
 class Controller(IController):
@@ -18,4 +18,4 @@ class Controller(IController):
         return self.__model
 
     def start(self):
-        print("Not yet implemented")
+        self.__view.displayBoard(self.__model.getBoardGame())

@@ -1,7 +1,7 @@
 from abc import ABC, abstractmethod
 
-from contract.imodel import IModel
-from contract.iview import IView
+from shared.imodel import IModel
+from shared.iview import IView
 
 
 class IController(ABC):
